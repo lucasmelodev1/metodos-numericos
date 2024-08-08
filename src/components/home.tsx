@@ -134,10 +134,10 @@ export function Home() {
                     a
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    b
+                    x
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    x
+                    b
                   </th>
                   <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-0">
                     f(x)
@@ -151,8 +151,8 @@ export function Home() {
                       {index + 1}
                     </td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.a}</td>
-                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.x}</td>
+                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.fx}</td>
                   </tr>
                 ))}
@@ -179,10 +179,10 @@ export function Home() {
                     a
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    b
+                    x
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    x
+                    b
                   </th>
                   <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-0">
                     f(x)
@@ -196,8 +196,8 @@ export function Home() {
                       {index + 1}
                     </td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.a}</td>
-                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.x}</td>
+                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.fx}</td>
                   </tr>
                 ))}
@@ -298,10 +298,10 @@ export function Home() {
                     a
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    b
+                    x
                   </th>
                   <th scope="col" className="px-4 py-3.5 text-left text-sm font-semibold text-gray-900">
-                    x
+                    b
                   </th>
                   <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-0">
                     f(x)
@@ -315,8 +315,8 @@ export function Home() {
                       {index + 1}
                     </td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.a}</td>
-                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.x}</td>
+                    <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.b}</td>
                     <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.fx}</td>
                   </tr>
                 ))}
