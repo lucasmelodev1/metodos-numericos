@@ -31,8 +31,6 @@ export function Home() {
       epsilon,
     )}
 
-  console.log(bissecao.ms)
-
   const falsaPosicao = calculaMetodoFalsaPosicao(
     funcao,
     0,
@@ -224,7 +222,7 @@ export function Home() {
                     x
                   </th>
                   <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-0">
-                    erro
+                    fi(x)
                   </th>
                 </tr>
                 </thead>
@@ -235,7 +233,7 @@ export function Home() {
                       {index + 1}
                     </td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.x}</td>
-                    <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.erro}</td>
+                    <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.fx}</td>
                   </tr>
                 ))}
                 </tbody>
@@ -261,7 +259,7 @@ export function Home() {
                     x
                   </th>
                   <th scope="col" className="py-3.5 pl-4 pr-4 text-left text-sm font-semibold text-gray-900 sm:pr-0">
-                    erro
+                    f(x)
                   </th>
                 </tr>
                 </thead>
@@ -272,7 +270,7 @@ export function Home() {
                       {index + 1}
                     </td>
                     <td className="whitespace-nowrap p-4 text-sm text-gray-500">{e.x}</td>
-                    <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.erro}</td>
+                    <td className="whitespace-nowrap py-4 pl-4 pr-4 text-sm text-gray-500 sm:pr-0">{e.fx}</td>
                   </tr>
                 ))}
                 </tbody>

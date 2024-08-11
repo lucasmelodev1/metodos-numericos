@@ -1,26 +1,24 @@
-import {RespostaErro} from "@/utils/resposta";
+import {RespostaFx} from "@/utils/resposta";
 
 export default function calculaMetodoNewton(
   f: (x: number) => number,
   fLinha: (x: number) => number,
   x0: number,
-  erro: number
-): {r: RespostaErro[], ms: number} {
+  tolerancia: number
+): {r: RespostaFx[], ms: number} {
   const inicio = performance.now()
 
   let x = x0
-  let xAnterior = x0
-  let erroAtual = 1
+  let fx = f(x)
 
-  const respostas: RespostaErro[] = []
+  const respostas: RespostaFx[] = []
 
-  while (erroAtual > erro) {
-    x = xAnterior - f(xAnterior) / fLinha(xAnterior)
-    erroAtual = Math.abs(x - xAnterior)
-    xAnterior = x
+  do {
+    x = x - (f(x) / fLinha(x))
+    fx = f(x)
 
-    respostas.push({x, erro: erroAtual})
-  }
+    respostas.push({x, fx})
+  } while (Math.abs(fx) > tolerancia)
 
   const fim = performance.now()
 

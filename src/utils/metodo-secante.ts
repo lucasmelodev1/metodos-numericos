@@ -1,4 +1,4 @@
-import {Resposta, RespostaErro} from "@/utils/resposta";
+import {Resposta, RespostaFx} from "@/utils/resposta";
 
 export default function calculaMetodoSecante(
   f: (x: number) => number,
@@ -23,7 +23,7 @@ export default function calculaMetodoSecante(
       fx: f(x),
     })
 
-    if (Math.abs(x - b) < tol) {
+    if (Math.abs(f(x)) < tol) {
       const fim = performance.now()
 
       return {

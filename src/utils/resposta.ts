@@ -5,7 +5,7 @@ export interface Resposta {
   fx: number;
 }
 
-export interface RespostaErro {
+export interface RespostaFx {
   x: number;
-  erro: number;
+  fx: number;
 }
